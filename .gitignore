@@ -1,0 +1,24 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs e arquivos temporários
+*.log
+*.sqlite3
+*.db
+
+# Docker
+*.dockerfile
+*.env.*.local
