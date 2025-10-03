@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: alfa-admin
+data:
+  DATABASE_URL: postgresql://admin:password@postgres:5432/admindb

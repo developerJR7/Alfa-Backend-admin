@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# Namespace padrão para todos os recursos
+namespace: alfa-admin
+
+resources:
+  - ./namespaces/namespace.yaml
+  - ./secrets/db-secret.yaml
+  - ./configmaps/config.yaml
+  - ./postgres/postgres-deployment.yaml
+  - ./postgres/postgres-service.yaml
+  - ./postgres/postgres-pvc.yaml
+  - ./admin-app/deployment.yaml
+  - ./admin-app/service.yaml
+  - ./admin-app/hpa.yaml
+  - ./ingress/ingress.yaml
